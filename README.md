@@ -3,4 +3,4 @@ acecloudacademy-maven-repo
 
 
 CI-CD Flow 
-CI/CD Pipeline Setup
+CI/CD Pipeline
