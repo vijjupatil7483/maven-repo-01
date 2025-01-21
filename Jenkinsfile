@@ -1,6 +1,6 @@
 pipeline {
     // add your slave label name
-    agent { label 'my-first-jenkins-slave-server'}
+    agent { label 'jenkins-slave-node'}
     tools{
         maven 'maven-test'
     }
