@@ -1,6 +1,6 @@
 pipeline {
     // add your slave label name
-    agent { label 'jenkins-slave-node'}
+    agent { label 'jenkins-slave'}
     tools{
         maven 'maven-test'
     }
@@ -24,7 +24,7 @@ pipeline {
 
             steps {
 	      sshagent(['devopsadmin']) {
-              sh "scp -o StrictHostKeyChecking=no  target/maven-web-application.war  devopsadmin@54.147.152.43:/opt/tomcat9/webapps"
+              sh "scp -o StrictHostKeyChecking=no  target/maven-web-application.war  ec2-user@3.80.111.199:/opt/tomcat9/webapps"
 	      }
          }
         }
